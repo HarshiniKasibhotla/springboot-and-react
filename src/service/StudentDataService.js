@@ -10,6 +10,27 @@ class StudentDataService
     {
         return axios.get(`${COURSE_API_URL}/students`);
     }
+     retrieveStudent(name, id) {
+        //console.log('executed service')
+        return axios.get(`${COURSE_API_URL}/students/${id}`);
+    }
 
+    deleteStudent(name, id) {
+        //console.log('executed service')
+        return axios.delete(`${COURSE_API_URL}/students${id}`);
+    }
+
+    updateStudent(name, id, student) {
+        //console.log('executed service')
+        return axios.put(`${COURSE_API_URL}/students/${id}`, student);
+    }
+
+    createStudent(name, student) {
+        //console.log('executed service')
+        return axios.post(`${COURSE_API_URL}/courses/`, student);
+    }
 }
-export default StudentDataService;
+
+export default new StudentDataService();
+
+

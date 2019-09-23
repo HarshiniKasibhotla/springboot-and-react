@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ListStudentsComponent from './ListStudentsComponent';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import StudentComponent fr
+import StudentComponent from './StudentComponent';
 class CourseApp extends Component
 {
 
